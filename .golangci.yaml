@@ -1,0 +1,24 @@
+run:
+  build-tags:
+    - nolibopusfile
+linters:
+  presets:
+    - bugs
+    - performance
+    - format
+    - test
+  enable:
+    - copyloopvar
+    - goconst
+    - godot
+    - intrange
+    - predeclared
+    - unconvert
+    - usestdlibvars
+    - whitespace
+    - zerologlint
+  disable:
+    - asciicheck  # Unicode is fine!
+    - testpackage  # Test packages only allow blackbox testing
+    - exhaustruct  # Too verbose
+  max-same-issues: 0

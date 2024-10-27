@@ -1,0 +1,3 @@
+# ACMI module for Go
+
+This module contains types and tools for working with [Air Combat Maneuvering Information (ACMI)](https://www.tacview.net/documentation/acmi/en/) flight recording data produced and consumed by [Tacview](https://www.tacview.net/). It does not contain a functional exporter or parser for ACMI data, but it can be used to create custom parsers and exporters meeting specific use cases.
