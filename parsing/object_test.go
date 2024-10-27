@@ -59,12 +59,14 @@ func TestObjectGetCoordinates(t *testing.T) {
 			} else {
 				require.NoError(t, err)
 				if testCase.want.Longitude != nil {
-					assert.InDelta(t, testCase.want.Longitude, c.Longitude, 0.01)
+					require.NotNil(t, c.Longitude)
+					assert.InDelta(t, *testCase.want.Longitude, *c.Longitude, 0.01)
 				} else {
 					assert.Nil(t, c.Longitude)
 				}
 				if testCase.want.Latitude != nil {
-					assert.InDelta(t, testCase.want.Latitude, c.Latitude, 0.01)
+					require.NotNil(t, c.Latitude)
+					assert.InDelta(t, *testCase.want.Latitude, *c.Latitude, 0.01)
 				} else {
 					assert.Nil(t, c.Latitude)
 				}
