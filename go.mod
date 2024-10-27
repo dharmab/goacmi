@@ -1,4 +1,4 @@
-module github.com/dharma/acmi
+module github.com/dharmab/goacmi
 
 go 1.23.0
 
