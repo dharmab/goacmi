@@ -10,4 +10,9 @@ const (
 	Cyan   Color = "Cyan"
 	Blue   Color = "Blue"
 	Violet Color = "Violet"
+	Grey   Color = "Grey"
 )
+
+func (c Color) String() string {
+	return string(c)
+}
