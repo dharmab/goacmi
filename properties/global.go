@@ -1,7 +1,5 @@
 package properties
 
-const GlobalObjectID = 0
-
 const (
 	// DataSource is the source simulator, control station or file format.
 	DataSource = "DataSource"

@@ -10,19 +10,11 @@ import (
 	"github.com/martinlindhe/unit"
 )
 
+const GlobalObjectID = 0
+
 // Object models the ID and properties of an object within ACMI data.
 type Object struct {
 	ID         uint64
-	Properties map[string]string
-}
-
-// / Update models the changes to an object within a line of ACMI data.
-type Update struct {
-	// ID of the object.
-	ID uint64
-	// IsRemove indicates if the update removes the object.
-	IsRemoval bool
-	// Properties provided in the update.
 	Properties map[string]string
 }
 
@@ -147,4 +139,8 @@ func (o *Object) GetLength(property string) (unit.Length, error) {
 		return 0, err
 	}
 	return unit.Length(n) * unit.Meter, nil
+}
+
+func (o *Object) String() string {
+	return asString(false, o.ID, o.Properties)
 }
