@@ -6,6 +6,8 @@ const (
 	Sea             string = "Sea"
 	Weapon          string = "Weapon"
 	Sensor          string = "Sensor"
+	Navaid          string = "Navaid"
+	Misc            string = "Misc"
 	Static          string = "Static"
 	Heavy           string = "Heavy"
 	Medium          string = "Medium"
