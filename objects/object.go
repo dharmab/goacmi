@@ -51,8 +51,7 @@ func (o *Object) Update(update *Update, referenceLongitude, referenceLatitude fl
 	currentCoordinates, err := o.GetCoordinates(referenceLongitude, referenceLatitude)
 	if err != nil {
 		o.SetProperty(properties.Transform, newTransform)
-		//lint:ignore nilerr intentional overwrite of invalid coordinates
-		return nil // ignore
+		return nil //nolint:nilerr // intentional: overwrite unparseable coordinates with the new raw transform
 	}
 	err = currentCoordinates.Parse(newTransform, referenceLongitude, referenceLatitude)
 	if err != nil {
