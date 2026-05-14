@@ -11,10 +11,6 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-// p converts a value to a pointer.
-//
-//go:fix inline
-func p[T any](v T) *T { return new(v) }
 
 func TestObjectGetCoordinates(t *testing.T) {
 	t.Parallel()
@@ -33,10 +29,10 @@ func TestObjectGetCoordinates(t *testing.T) {
 			},
 			want: objects.NewCoordinates(
 				new(35.4309806), new(36.9989461),
-				p(60.47*unit.Meter),
+				new(60.47*unit.Meter),
 				new(-34817.79), new(220847.14),
-				nil, p(0.1*unit.Degree), p(322.8*unit.Degree),
-				p(325*unit.Degree),
+				nil, new(0.1*unit.Degree), new(322.8*unit.Degree),
+				new(325*unit.Degree),
 			),
 			wantErr: false,
 		},
