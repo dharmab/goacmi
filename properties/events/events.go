@@ -16,7 +16,7 @@ const (
 	// TakenOff may occur when an aircraft takes off to explicitly indicate a takeoff.
 	TakenOff Event = "TakenOff"
 	// Landed may occur when an aircraft lands to explicitly indicate a landing.
-	LandedEvent Event = "Landed"
+	Landed Event = "Landed"
 	// Timeout occurs when a simulated weapon reaches or misses its target. This is mainly used for shot logs for real-world training.
-	TimeoutEvent = "Timeout"
+	Timeout Event = "Timeout"
 )
