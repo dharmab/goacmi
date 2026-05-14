@@ -21,4 +21,5 @@ linters:
     - asciicheck  # Unicode is fine!
     - testpackage  # Test packages only allow blackbox testing
     - exhaustruct  # Too verbose
+issues:
   max-same-issues: 0
