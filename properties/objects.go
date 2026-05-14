@@ -42,7 +42,7 @@ const (
 	Debug = "Debug"
 	// Label is free text visible in Tacview.
 	Label = "Label"
-	// FocusedTarget is the ID of an object that this object is focused on. Ex: Object designated by laster.
+	// FocusedTarget is the ID of an object that this object is focused on. Ex: Object designated by laser.
 	FocusedTarget = "FocusedTarget"
 	// LockedTarget is the ID of an object that this object is locked on with any sensor.
 	LockedTarget = "LockedTarget"
@@ -64,7 +64,7 @@ const (
 	LockedTarget9 = "LockedTarget9"
 	// Important is a ratio indicating the object's relative importance.
 	Importance = "Importance"
-	// Slot indexes the objection's position within a group. Ex: 0 is the first object in a group.
+	// Slot indexes the object's position within a group. Ex: 0 is the first object in a group.
 	Slot = "Slot"
 	// Disabled indicates if the object is disabled (but not destroyed). This is useful for real-world training.
 	// 0 indicates the object is enabled, 1 indicates the object is disabled.
@@ -79,7 +79,7 @@ const (
 	Width = "Width"
 	// Height of the object in meters.
 	Height = "Height"
-	// Radius of the object's boudning sphere in meters.
+	// Radius of the object's bounding sphere in meters.
 	Radius = "Radius"
 	// IAS is the indicated airspeed in meters per second.
 	IAS = "IAS"
@@ -99,9 +99,9 @@ const (
 	HDG = "HDG"
 	// HDM is the aircraft's magnetic heading in degrees.
 	HDM = "HDM"
-	// Throttle is the throtle handle position for engine 1. Values below 0 indicate reverse thrust, and values above 1 indicate afterburner.
+	// Throttle is the throttle handle position for engine 1. Values below 0 indicate reverse thrust, and values above 1 indicate afterburner.
 	Throttle = "Throttle"
-	// Throttle2 is the throtle handle position for engine 2. Values below 0 indicate reverse thrust, and values above 1 indicate afterburner.
+	// Throttle2 is the throttle handle position for engine 2. Values below 0 indicate reverse thrust, and values above 1 indicate afterburner.
 	Throttle2 = "Throttle2"
 	// EngineRPM is the revolutions per minute of engine 1.
 	EngineRPM = "EngineRPM"
@@ -151,7 +151,7 @@ const (
 	FuelWeight9 = "FuelWeight9"
 	// FuelVolume is the volume of fuel in the first tank in liters.
 	FuelVolume = "FuelVolume"
-	// FuelFlowWeight is the fueld flow for the first engine in kilograms per hour.
+	// FuelFlowWeight is the fuel flow for the first engine in kilograms per hour.
 	FuelFlowWeight = "FuelFlowWeight"
 	// FuelFlowWeight2 is the fuel flow for the second engine in kilograms per hour.
 	FuelFlowWeight2 = "FuelFlowWeight2"
@@ -191,7 +191,7 @@ const (
 	RadarElevation = "RadarElevation"
 	// RadarRoll is the radar roll angle in degrees.
 	RadarRoll = "RadarRoll"
-	// RadaraRange is the radar scan range in meters.
+	// RadarRange is the radar scan range in meters.
 	RadarRange = "RadarRange"
 	// RadarHorizontalBeamwidth is the radar azimuth beam width in degrees.
 	RadarHorizontalBeamwidth = "RadarHorizontalBeamwidth"
@@ -211,15 +211,15 @@ const (
 	RadarRangeGateHorizontalBeamwidth = "RadarRangeGateHorizontalBeamwidth"
 	// RadarRangeGateVerticalBeamwidth is the radar elevation beam width in degrees.
 	RadarRangeGateVerticalBeamwidth = "RadarRangeGateVerticalBeamwidth"
-	// LockedTargetMode indicates the targer lock mode for the primary target, with 0 indicating no lock.
+	// LockedTargetMode indicates the target lock mode for the primary target, with 0 indicating no lock.
 	LockedTargetMode = "LockedTargetMode"
-	// LockedTargetAzimuth indicates the azimuth of the primary locked target relaitve to this aircraft in degrees.
+	// LockedTargetAzimuth indicates the azimuth of the primary locked target relative to this aircraft in degrees.
 	LockedTargetAzimuth = "LockedTargetAzimuth"
-	// LockedTargetElevation indicates the elevation of the primary locked target relaitve to this aircraft in degrees.
+	// LockedTargetElevation indicates the elevation of the primary locked target relative to this aircraft in degrees.
 	LockedTargetElevation = "LockedTargetElevation"
 	// LockedTargetRange indicates the range to the primary locked target in meters.
 	LockedTargetRange = "LockedTargetRange"
-	// EnagementMode indicates the engagement mode, such as for SAM sites toggling their radars. 0 indicates off.
+	// EngagementMode indicates the engagement mode, such as for SAM sites toggling their radars. 0 indicates off.
 	EngagementMode = "EngagementMode"
 	// EngagementMode2 indicates the engagement mode, such as for SAM sites toggling their radars. 0 indicates off.
 	EngagementMode2 = "EngagementMode2"
@@ -281,7 +281,7 @@ const (
 	LongitudinalGForce = "LongitudinalGForce"
 	// LateralGForce is the force on the aircraft's lateral axis in g.
 	LateralGForce = "LateralGForce"
-	// QNH is the regiontal barometric altimitmer setting that calibrates the alimter to read altitude above sea level, in hectopascals.
+	// QNH is the regional barometric altimeter setting that calibrates the altimeter to read altitude above sea level, in hectopascals.
 	QNH = "QNH"
 	// WindDirection is the wind direction relative to true north in degrees.
 	WindDirection = "WindDirection"

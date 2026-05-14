@@ -3,7 +3,7 @@ package events
 type Event string
 
 const (
-	// Mesage is a generic event.
+	// Message is a generic event.
 	Message Event = "Message"
 	// Bookmark highlights a point in the timeline and event log.
 	Bookmark Event = "Bookmark"
