@@ -28,4 +28,6 @@ const (
 	// ReferenceLatitude is the latitude of a median point in degrees.
 	// Add this to each object's latitude to get the actual latitude.
 	ReferenceLatitude = "ReferenceLatitude"
+	// MapId identifies the map or theater.
+	MapId = "MapId"
 )
