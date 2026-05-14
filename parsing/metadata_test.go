@@ -152,6 +152,15 @@ func TestParseObjectUpdate(t *testing.T) {
 				},
 			},
 		},
+		{
+			line: "8000000000000001,T=||0",
+			expectedUpdate: &objects.Update{
+				ID: 0x8000000000000001,
+				Properties: map[string]string{
+					properties.Transform: "||0",
+				},
+			},
+		},
 	}
 
 	for _, testCase := range testCases {

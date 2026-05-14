@@ -2,7 +2,6 @@ package parsing
 
 import (
 	"fmt"
-	"math"
 	"strconv"
 	"strings"
 	"time"
@@ -53,9 +52,6 @@ func parseID(idStr string) (uint64, error) {
 	id, err := strconv.ParseUint(idStr, 16, 64)
 	if err != nil {
 		return 0, fmt.Errorf("error parsing object ID: %w", err)
-	}
-	if id > math.MaxInt {
-		return 0, fmt.Errorf("object ID is too large: %d", id)
 	}
 	return id, nil
 }
