@@ -9,7 +9,7 @@ import (
 	"github.com/dharmab/goacmi/objects"
 )
 
-// ParseTimeFrame attemps to parse a line of ACMI data describing a time frame into a [time.Duration].
+// ParseTimeFrame attempts to parse a line of ACMI data describing a time frame into a [time.Duration].
 func ParseTimeFrame(line string) (time.Duration, error) {
 	if !strings.HasPrefix(line, "#") {
 		return 0, fmt.Errorf("line does not contain TimeFrame: %s", line)
@@ -22,7 +22,7 @@ func ParseTimeFrame(line string) (time.Duration, error) {
 	return duration, nil
 }
 
-// ParseObjectUpdate attemps to parse a line of ACMI data describing an object update into an [objects.Update].
+// ParseObjectUpdate attempts to parse a line of ACMI data describing an object update into an [objects.Update].
 func ParseObjectUpdate(line string) (*objects.Update, error) {
 	update := &objects.Update{}
 

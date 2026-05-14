@@ -10,6 +10,8 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
+const navaidStaticBullseye = "Navaid+Static+Bullseye"
+
 func TestParseTimeFrame(t *testing.T) {
 	t.Parallel()
 	testCases := []struct {
@@ -62,7 +64,7 @@ func TestParseObjectUpdate(t *testing.T) {
 				ID: 0x40000001,
 				Properties: map[string]string{
 					properties.Transform: "5.9005604|5.0219182|2000",
-					properties.Type:      "Navaid+Static+Bullseye",
+					properties.Type:      navaidStaticBullseye,
 					properties.Color:     "Blue",
 					properties.Coalition: "Enemies",
 				},
@@ -74,7 +76,7 @@ func TestParseObjectUpdate(t *testing.T) {
 				ID: 0x40000002,
 				Properties: map[string]string{
 					properties.Transform: "5.9005604|5.0219182|2000",
-					properties.Type:      "Navaid+Static+Bullseye",
+					properties.Type:      navaidStaticBullseye,
 					properties.Color:     "Grey",
 					properties.Coalition: "Neutrals",
 				},
@@ -86,7 +88,7 @@ func TestParseObjectUpdate(t *testing.T) {
 				ID: 0x40000003,
 				Properties: map[string]string{
 					properties.Transform: "5.9004647|5.0217148|2000|-9.44|-22.3",
-					properties.Type:      "Navaid+Static+Bullseye",
+					properties.Type:      navaidStaticBullseye,
 					properties.Color:     "Red",
 					properties.Coalition: "Allies",
 				},

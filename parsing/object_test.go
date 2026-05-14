@@ -11,7 +11,6 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-
 func TestObjectGetCoordinates(t *testing.T) {
 	t.Parallel()
 	testCases := []struct {

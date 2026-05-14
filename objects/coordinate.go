@@ -19,7 +19,7 @@ type Coordinates struct {
 	Altitude *unit.Length
 	// X is the object's native coordinate within the sim
 	X *float64
-	// Y is the object's native coordiante within the sim
+	// Y is the object's native coordinate within the sim
 	Y *float64
 	// Roll angle
 	Roll *unit.Angle

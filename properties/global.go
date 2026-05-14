@@ -29,5 +29,5 @@ const (
 	// Add this to each object's latitude to get the actual latitude.
 	ReferenceLatitude = "ReferenceLatitude"
 	// MapId identifies the map or theater.
-	MapId = "MapId"
+	MapId = "MapId" //nolint:staticcheck // matches ACMI wire format casing
 )
