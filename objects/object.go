@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/dharmab/goacmi/properties"
+	"github.com/dharmab/goacmi/v2/properties"
 	"github.com/martinlindhe/unit"
 )
 

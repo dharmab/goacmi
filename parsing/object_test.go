@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/dharmab/goacmi/objects"
+	"github.com/dharmab/goacmi/v2/objects"
 	"github.com/martinlindhe/unit"
 	"github.com/paulmach/orb"
 	"github.com/stretchr/testify/assert"

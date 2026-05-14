@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dharmab/goacmi/objects"
+	"github.com/dharmab/goacmi/v2/objects"
 )
 
 // ParseTimeFrame attempts to parse a line of ACMI data describing a time frame into a [time.Duration].

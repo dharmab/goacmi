@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dharmab/goacmi/objects"
-	"github.com/dharmab/goacmi/properties"
+	"github.com/dharmab/goacmi/v2/objects"
+	"github.com/dharmab/goacmi/v2/properties"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

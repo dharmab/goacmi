@@ -1,4 +1,4 @@
-module github.com/dharmab/goacmi
+module github.com/dharmab/goacmi/v2
 
 go 1.26.0
 
