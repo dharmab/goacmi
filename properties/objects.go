@@ -295,4 +295,6 @@ const (
 	HeartRate = "HeartRate"
 	// SpO2 is the pilot's blood oxygen saturation level in percent.
 	SpO2 = "SpO2"
+	// Event is the property key for ACMI events.
+	Event = "Event"
 )
