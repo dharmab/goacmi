@@ -61,10 +61,7 @@ func parseProperties(propertiesStr string) (map[string]string, error) {
 	if propertiesStr == "" {
 		return properties, nil
 	}
-	if strings.Contains(propertiesStr, `\,`) {
-		propertiesStr = strings.ReplaceAll(propertiesStr, `\,`, "?")
-	}
-	for _, prop := range strings.Split(propertiesStr, ",") {
+	for _, prop := range splitOnUnescapedCommas(propertiesStr) {
 		key, value, ok := strings.Cut(prop, "=")
 		if !ok {
 			return nil, fmt.Errorf("error parsing property: %s", prop)
@@ -72,4 +69,23 @@ func parseProperties(propertiesStr string) (map[string]string, error) {
 		properties[key] = strings.TrimSpace(value)
 	}
 	return properties, nil
+}
+
+// splitOnUnescapedCommas splits s on commas not preceded by a backslash,
+// unescaping \, to , in each resulting segment.
+func splitOnUnescapedCommas(s string) []string {
+	var parts []string
+	var current strings.Builder
+	for i := 0; i < len(s); i++ {
+		if s[i] == '\\' && i+1 < len(s) && s[i+1] == ',' {
+			current.WriteByte(',')
+			i++
+		} else if s[i] == ',' {
+			parts = append(parts, current.String())
+			current.Reset()
+		} else {
+			current.WriteByte(s[i])
+		}
+	}
+	return append(parts, current.String())
 }

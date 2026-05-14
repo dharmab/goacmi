@@ -161,6 +161,16 @@ func TestParseObjectUpdate(t *testing.T) {
 				},
 			},
 		},
+		{
+			line: `1,Name=Foo\,Bar,Type=Plane`,
+			expectedUpdate: &objects.Update{
+				ID: 0x1,
+				Properties: map[string]string{
+					properties.Name: "Foo,Bar",
+					properties.Type: "Plane",
+				},
+			},
+		},
 	}
 
 	for _, testCase := range testCases {
